@@ -50,7 +50,6 @@ try:
                 continue
             driver.implicitly_wait(5)
             while True:
-                break
                 scroll_height = 2000
                 document_height_before = driver.execute_script("return document.documentElement.scrollHeight")
                 driver.execute_script(f"window.scrollTo(0, {document_height_before + scroll_height});")
